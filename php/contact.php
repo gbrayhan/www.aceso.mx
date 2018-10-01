@@ -17,13 +17,13 @@ function ajaxResponse($status, $message, $data = NULL, $mg = NULL) {
     exit($output);
 }
 function sendMailgun($data) {
-    $api_key = 'key-**';
-    $api_domain = 'sandbox**.mailgun.org';
-    $send_to = 'MAIL@gmail.com';
+    $api_key = 'key-00000000000000000000000000000000';
+    $api_domain = 'sandboxffffffffffffffffffffffffffffffff.mailgun.org';
+    $send_to = 'me@mail.com';
     $name = $data['name'];
     $email = $data['email'];
     $content = $data['message'];
-    $messageBody = "Contact: $name ($email)\n\nMessage: $content";
+    $messageBody = " Contacto: $name ($email) \n\n Mensaje: $content";
     $config = array();
     $config['api_key'] = $api_key;
     $config['api_url'] = 'https://api.mailgun.net/v3/' . $api_domain . '/messages';
@@ -31,7 +31,7 @@ function sendMailgun($data) {
     $message['from'] = $email;
     $message['to'] = $send_to;
     $message['h:Reply-To'] = $email;
-    $message['subject'] = 'Mail aceso.mx';
+    $message['subject'] = 'Contacto de Pagina Aceso';
     $message['text'] = $messageBody;
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $config['api_url']);

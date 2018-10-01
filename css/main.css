@@ -126,11 +126,12 @@ h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 42px;
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 22px;
+	color: bla
 }
 
 h3, .h3 {
@@ -552,10 +553,10 @@ td, th {
 }
 
 .section-full {
-	padding-top: 70px;
+	padding-top: 60px;
 	padding-right: 0;
 	padding-left: 0;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .section-half {
@@ -713,7 +714,8 @@ td, th {
   padding-right: 0;
 }
 .slogan{
-  font-size: 25px;
+  margin-top: 10px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -932,7 +934,7 @@ td, th {
   color: rgba(255, 255, 255, 0.95);
   margin: 0 20px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {
@@ -985,6 +987,10 @@ td, th {
   background: -moz-linear-gradient(left, rgba(51, 153, 204, 0.75) 0%, rgba(103, 184, 222, 0.75) 100%);
   background: -webkit-linear-gradient(left, rgba(51, 153, 204, 0.75) 0%, rgba(103, 184, 222, 0.75) 100%);
   background: linear-gradient(to right, rgba(51, 153, 204, 0.75) 0%, rgba(103, 184, 222, 0.75) 100%);
+}
+
+.header-content .d-flex {
+	height: 40px;
 }
 
 .search {
@@ -1119,7 +1125,7 @@ td, th {
 .signle-service figcaption {
 	background: #fff;
 	padding: 40px 20px;
-	height: 280px;
+	height: 20px;
 }
 
 .signle-service figcaption h5 {
@@ -1634,8 +1640,8 @@ footer .footer-nav li a:hover {
 }
 
 .footer-bottom {
-  padding-top: 40px;
-  border-top: 1px solid #eee;
+	padding-top: 25px;
+	border-top: 1px solid #eee;
 }
 
 .footer-bottom .footer-text a:hover {
@@ -1643,8 +1649,8 @@ footer .footer-nav li a:hover {
 }
 
 .logo img{
-  width: auto;
-  height: 45px;
+	width: auto;
+	height: 35px;
 
 }
 
@@ -1658,9 +1664,10 @@ footer .footer-nav li a:hover {
 }
 
 .section-title p {
-    color: #049DBF;
-    margin-top: 1em;
-    font-size: 2em;
+	color: #049DBF;
+	margin-top: 1em;
+	font-size: 2em;
+	line-height: 1.2;
 }
 
 /*  TABS
